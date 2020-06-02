@@ -106,10 +106,6 @@
   }
 }
 
-#resetButton {
-  font-weight: 700;
-}
-
 .vertical-alignment-helper {
   display: table;
   width: 100%;
@@ -234,23 +230,10 @@
   text-decoration: line-through !important;
 }
 
-/* These are needed because AdmintLTE 2.x doesn't support Font Awesome 5.x */
-.sidebar-menu > li > a > .fab,
-.sidebar-menu > li > a > .far,
-.sidebar-menu > li > a > .fas {
-  width: 20px;
-}
-
 /* Utilities */
-.text-underline {
-  text-decoration: underline;
-}
 
-.breakall {
-  white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
-}
+/* TODO: remove no-user-select and use user-select-none
+when AdmintLTE is updated to Bootstrap >= 4.5.0 */
 
 .no-user-select {
   -webkit-user-select: none;
@@ -263,38 +246,22 @@
   cursor: pointer;
 }
 
+.daterangepicker {
+  font-family: inherit;
+}
+
+/* what is this? */
 .bootstrap-select.bs-container.align-right {
   left: unset !important;
   right: 10px;
 }
 
+/* what is this? */
 .input-group-addon {
   padding: 0 12px;
 }
 
-.user-panel > .info > span {
-  padding-right: 5px;
-  margin-top: 3px;
-  font-size: 11px;
-}
-
-.user-panel > .info i {
-  margin-right: 3px;
-}
-
-.row-centered > div[class^="col-"] {
-  display: inline-block;
-  float: none;
-}
-
-.version-info {
-  margin-top: 10px;
-}
-
-.daterangepicker {
-  font-family: inherit;
-}
-
+/* what is this? */
 .form-inline .form-control {
   display: inline-block;
   width: 100%;
